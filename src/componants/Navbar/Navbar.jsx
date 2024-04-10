@@ -1,12 +1,19 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
+import { signOut } from "firebase/auth";
 
 const Navbar = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track user authentication status
 
     // Function to handle logout
     const handleLogout = () => {
-        // Perform logout actions here
+        signOut(auth)
+        .then(result => {
+            console.log(result.user)
+        })
+        .catch(error => {
+            console.log(error)
+        })
         setIsLoggedIn(false); // Update isLoggedIn state to reflect logout
     };
 
