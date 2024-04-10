@@ -1,6 +1,8 @@
 
 
 const UpdateProfile = () => {
+
+    
     return (
         <div>
             <h2 className="text-4xl">This Update Profile</h2>

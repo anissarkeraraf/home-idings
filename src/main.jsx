@@ -12,6 +12,7 @@ import Root from './componants/Root/Root.jsx';
 import UpdateProfile from './componants/UpdateProfile/UpdateProfile.jsx';
 import UserProfile from './componants/User/UserProfile.jsx';
 import Login from './componants/Login/Login.jsx';
+import Register from './componants/Register/Register.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login></Login>
+      },
+      {
+        path: '/register',
+        element: <Register></Register>
       }
     ]
   },
