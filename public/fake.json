@@ -1,155 +1,153 @@
-{
-    "residential_estates": [
-        {
-            "id": 1,
-            "estate_title": "Modern Family Home",
-            "image": "https://i.ibb.co/wRMg4Jp/happy-family-family-background-new-house-modern-new-house-is-background.jpg",
-            "segment_name": "Residential",
-            "description": "Beautifully designed modern family home with spacious living areas.",
-            "price": "$500,000",
-            "status": "sale",
-            "area": "2500 sq ft",
-            "location": "City Center",
-            "facilities": [
-                "living room",
-                "kitchen",
-                "backyard"
-            ],
-            "button_text": "View Property"
-        },
-        {
-            "id": 2,
-            "estate_title": "Luxury Condo",
-            "image": "https://i.ibb.co/QK9m32C/spacious-room-with-big-window.jpg",
-            "segment_name": "Residential",
-            "description": "Luxurious condo with stunning views and top-notch amenities.",
-            "price": "$1,200,000",
-            "status": "sale",
-            "area": "1800 sq ft",
-            "location": "Waterfront",
-            "facilities": [
-                "swimming pool",
-                "gym",
-                "balcony"
-            ],
-            "button_text": "View Property"
-        },
-        {
-            "id": 3,
-            "estate_title": "Cozy Townhouse",
-            "image": "https://i.ibb.co/b1gH6Ph/2151238253.jpg",
-            "segment_name": "Residential",
-            "description": "Charming townhouse perfect for small families.",
-            "price": "$300,000",
-            "status": "sale",
-            "area": "1500 sq ft",
-            "location": "Suburbs",
-            "facilities": [
-                "backyard",
-                "garage"
-            ],
-            "button_text": "View Property"
-        },
-        {
-            "id": 4,
-            "estate_title": "Spacious Villa",
-            "image": "https://i.ibb.co/hgQFrH3/backyard-water-contemporary-architecture-sky.jpg",
-            "segment_name": "Residential",
-            "description": "Expansive villa with beautiful landscaping and luxurious amenities.",
-            "price": "$2,500,000",
-            "status": "sale",
-            "area": "5000 sq ft",
-            "location": "Countryside",
-            "facilities": [
-                "swimming pool",
-                "tennis court",
-                "garden"
-            ],
-            "button_text": "View Property"
-        },
-        {
-            "id": 5,
-            "estate_title": "Cosy Apartment",
-            "image": "https://i.ibb.co/JpXt2ks/3594.jpg",
-            "segment_name": "Residential",
-            "description": "Comfortable apartment in a prime location with great amenities.",
-            "price": "$350,000",
-            "status": "sale",
-            "area": "1200 sq ft",
-            "location": "Downtown",
-            "facilities": [
-                "gym",
-                "parking",
-                "balcony"
-            ],
-            "button_text": "View Property"
-        },
-        {
-            "id": 6,
-            "estate_title": "Family Friendly Home",
-            "image": "https://i.ibb.co/nfZ4RZC/happy-family-playing-video-games.jpg",
-            "segment_name": "Residential",
-            "description": "Spacious home with a large backyard, perfect for families.",
-            "price": "$450,000",
-            "status": "sale",
-            "area": "1800 sq ft",
-            "location": "Suburbs",
-            "facilities": [
-                "backyard",
-                "garage",
-                "playroom"
-            ],
-            "button_text": "View Property"
-        },
-        {
-            "id": 7,
-            "estate_title": "Urban Loft",
-            "image": "https://i.ibb.co/bHhMd2h/empty-modern-room-with-furniture.jpg",
-            "segment_name": "Residential",
-            "description": "Chic loft-style apartment with modern finishes and urban views.",
-            "price": "$600,000",
-            "status": "sale",
-            "area": "1600 sq ft",
-            "location": "City Center",
-            "facilities": [
-                "open floor plan",
-                "rooftop terrace"
-            ],
-            "button_text": "View Property"
-        },
-        {
-            "id": 8,
-            "estate_title": "Seaside Cottage",
-            "image": "https://i.ibb.co/bHhMd2h/empty-modern-room-with-furniture.jpg",
-            "segment_name": "Residential",
-            "description": "Quaint cottage with stunning ocean views and beach access.",
-            "price": "$800,000",
-            "status": "sale",
-            "area": "2000 sq ft",
-            "location": "Coastal",
-            "facilities": [
-                "beachfront",
-                "fireplace",
-                "deck"
-            ],
-            "button_text": "View Property"
-        },
-        {
-            "id": 9,
-            "estate_title": "Mountain Retreat",
-            "image": "https://i.ibb.co/RNfs2pn/small-house-built-peaceful-green-hill-high-up-mountains.jpg",
-            "segment_name": "Residential",
-            "description": "Rustic mountain retreat surrounded by nature and hiking trails.",
-            "price": "$700,000",
-            "status": "sale",
-            "area": "2500 sq ft",
-            "location": "Mountains",
-            "facilities": [
-                "scenic views",
-                "hot tub",
-                "fire pit"
-            ],
-            "button_text": "View Property"
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "estate_title": "Modern Family Home",
+        "image": "https://i.ibb.co/wRMg4Jp/happy-family-family-background-new-house-modern-new-house-is-background.jpg",
+        "segment_name": "Residential",
+        "description": "Beautifully designed modern family home with spacious living areas.",
+        "price": "$500,000",
+        "status": "sale",
+        "area": "2500 sq ft",
+        "location": "City Center",
+        "facilities": [
+            "living room",
+            "kitchen",
+            "backyard"
+        ],
+        "button_text": "View Property"
+    },
+    {
+        "id": 2,
+        "estate_title": "Luxury Condo",
+        "image": "https://i.ibb.co/BPMvWsh/analog-landscape-city-with-buildings.jpg",
+        "segment_name": "Residential",
+        "description": "Luxurious condo with stunning views and top-notch amenities.",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "1800 sq ft",
+        "location": "Waterfront",
+        "facilities": [
+            "swimming pool",
+            "gym",
+            "balcony"
+        ],
+        "button_text": "View Property"
+    },
+    {
+        "id": 3,
+        "estate_title": "Cozy Townhouse",
+        "image": "https://i.ibb.co/b1gH6Ph/2151238253.jpg",
+        "segment_name": "Residential",
+        "description": "Charming townhouse perfect for small families.",
+        "price": "$300,000",
+        "status": "sale",
+        "area": "1500 sq ft",
+        "location": "Suburbs",
+        "facilities": [
+            "backyard",
+            "garage"
+        ],
+        "button_text": "View Property"
+    },
+    {
+        "id": 4,
+        "estate_title": "Spacious Villa",
+        "image": "https://i.ibb.co/hgQFrH3/backyard-water-contemporary-architecture-sky.jpg",
+        "segment_name": "Residential",
+        "description": "Expansive villa with beautiful landscaping and luxurious amenities.",
+        "price": "$2,500,000",
+        "status": "sale",
+        "area": "5000 sq ft",
+        "location": "Countryside",
+        "facilities": [
+            "swimming pool",
+            "tennis court",
+            "garden"
+        ],
+        "button_text": "View Property"
+    },
+    {
+        "id": 5,
+        "estate_title": "Cosy Apartment",
+        "image": "https://i.ibb.co/JpXt2ks/3594.jpg",
+        "segment_name": "Residential",
+        "description": "Comfortable apartment in a prime location with great amenities.",
+        "price": "$350,000",
+        "status": "sale",
+        "area": "1200 sq ft",
+        "location": "Downtown",
+        "facilities": [
+            "gym",
+            "parking",
+            "balcony"
+        ],
+        "button_text": "View Property"
+    },
+    {
+        "id": 6,
+        "estate_title": "Family Friendly Home",
+        "image": "https://i.ibb.co/DMYPM01/mother-daughter-standing-lawn.jpg",
+        "segment_name": "Residential",
+        "description": "Spacious home with a large backyard, perfect for families.",
+        "price": "$450,000",
+        "status": "sale",
+        "area": "1800 sq ft",
+        "location": "Suburbs",
+        "facilities": [
+            "backyard",
+            "garage",
+            "playroom"
+        ],
+        "button_text": "View Property"
+    },
+    {
+        "id": 7,
+        "estate_title": "Urban Loft",
+        "image": "https://i.ibb.co/59X6CwZ/174511.jpg",
+        "segment_name": "Residential",
+        "description": "Chic loft-style apartment with modern finishes and urban views.",
+        "price": "$600,000",
+        "status": "sale",
+        "area": "1600 sq ft",
+        "location": "City Center",
+        "facilities": [
+            "open floor plan",
+            "rooftop terrace"
+        ],
+        "button_text": "View Property"
+    },
+    {
+        "id": 8,
+        "estate_title": "Seaside Cottage",
+        "image": "https://i.ibb.co/bHhMd2h/empty-modern-room-with-furniture.jpg",
+        "segment_name": "Residential",
+        "description": "Quaint cottage with stunning ocean views and beach access.",
+        "price": "$800,000",
+        "status": "sale",
+        "area": "2000 sq ft",
+        "location": "Coastal",
+        "facilities": [
+            "beachfront",
+            "fireplace",
+            "deck"
+        ],
+        "button_text": "View Property"
+    },
+    {
+        "id": 9,
+        "estate_title": "Mountain Retreat",
+        "image": "https://i.ibb.co/RNfs2pn/small-house-built-peaceful-green-hill-high-up-mountains.jpg",
+        "segment_name": "Residential",
+        "description": "Rustic mountain retreat surrounded by nature and hiking trails.",
+        "price": "$700,000",
+        "status": "sale",
+        "area": "2500 sq ft",
+        "location": "Mountains",
+        "facilities": [
+            "scenic views",
+            "hot tub",
+            "fire pit"
+        ],
+        "button_text": "View Property"
+    }
+]
