@@ -13,6 +13,11 @@ import UpdateProfile from './componants/UpdateProfile/UpdateProfile.jsx';
 import UserProfile from './componants/User/UserProfile.jsx';
 import Login from './componants/Login/Login.jsx';
 import Register from './componants/Register/Register.jsx';
+import AuthProvider from './componants/Provider/AuthProvider.jsx';
+import PrivateRout from './componants/privateRoute/PrivateRout.jsx';
+import AboutUs from './componants/AboutUs/AboutUs.jsx';
+import FeaturedCards from './componants/FeaturedCards/FeaturedCards.jsx';
+import EstateSection from './componants/EstateSection/EstateSection.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +27,16 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('fake.json')
+        loader: () => fetch('/fake.json')
+      },
+      {
+        path: '/home/:id',
+        element: <PrivateRout><EstateSection></EstateSection></PrivateRout>,
+        loader: () => fetch('/fake.json')
+      },
+      {
+        path: '/featured',
+        element: <FeaturedCards></FeaturedCards>
       },
       {
         path: '/update',
@@ -30,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/user',
-        element: <UserProfile></UserProfile>
+        element: <PrivateRout><UserProfile></UserProfile></PrivateRout>
       },
       {
         path: '/login',
@@ -39,13 +53,20 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path: '/about',
+        element: <AboutUs></AboutUs>
       }
+
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

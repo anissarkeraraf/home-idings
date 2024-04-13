@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Banner = () => {
@@ -5,7 +6,7 @@ const Banner = () => {
         <div className="relative">
             <div className="carousel w-full mt-16 rounded-xl">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/PCR43Fg/night-architecture-outdoors-dusk-building-exterior-tree-grass-illuminated-generative-ai.jpg" className="w-full h-56 lg:h-[550px]" />
+                    <img src="https://i.ibb.co/gjg03rX/house-isolated-field-1.jpg" className="w-full h-56 lg:h-[550px]" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" className="text-4xl text-red-700">❮</a>
                         <a href="#slide2" className="text-4xl text-red-700">❯</a>
@@ -34,12 +35,12 @@ const Banner = () => {
                 </div>
 
             </div>
-            <div className="absolute bottom-[150px] left-[250px]">
+            <div className="absolute bottom-20 lg:bottom-[150px] left-24 md:left-64 lg:left-[250px]">
                 <div>
-                    <p className="text-6xl text-blue-800 font-bold">Bangla Town<span className="text-red-700">Connects</span></p>
-                    <p className="text-blue-800 font-bold text-2xl mt-4 ml-24">Your Dream House
+                    <p className="text-3xl lg:text-6xl text-orange-500 font-bold">Bangla Town<span className="text-red-700">Connects</span></p>
+                    <p className="text-orange-500 font-bold text-lg lg:text-xl lg:mt-4 ml-3 lg:ml-32">Your Dream House
                         Latest Project</p>
-                    <button className="btn btn-active btn-secondary ml-56 mt-5 px-5 rounded-full">Explore Our Project</button>                </div>
+                </div>
             </div>
         </div>
 

@@ -4,11 +4,11 @@ import { FaLocationDot } from "react-icons/fa6";
 const Card = () => {
     return (
         <div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto lg:mx-0 lg:gap-10 mb-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:grid-cols-3 mx-auto lg:mx-0 lg:gap-10 mb-20">
 
                 <div className="card bg-base-100 border-solid border-4 hover:border-[#bc9874] mt-16">
                     <div className="card-body">
-                        <p className="mx-auto border-solid border-4 h-20 w-20 lg:h-14 rounded-full hover:border-[#bc9874]">
+                        <p className="mx-auto border-solid border-4 h-20 w-20 md:h-14 md:w-20 lg:h-14 rounded-full hover:border-[#bc9874]">
                             <FaLocationDot className="text-4xl mx-auto mt-4"></FaLocationDot>
                         </p>
                         <h2 className="card-title mx-auto mt-3">Various Locations</h2>

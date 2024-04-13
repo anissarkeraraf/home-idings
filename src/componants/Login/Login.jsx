@@ -1,50 +1,77 @@
 
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { FaEye, FaEyeSlash, FaInstagram } from "react-icons/fa";
-import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { useContext, useState } from "react";
+import { FaEye, FaEyeSlash, } from "react-icons/fa";
+import { FiFacebook } from "react-icons/fi";
+import { FacebookAuthProvider, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { FaGoogle } from "react-icons/fa";
 import auth from "../../firebase/firebase.config";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { AuthContext } from "../Provider/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 
 
 const Login = () => {
 
+    const { signIn } = useContext(AuthContext);
+    const navigate = useNavigate();
 
 
-    const provider = new GoogleAuthProvider();
+
+
+    const googleProvider = new GoogleAuthProvider();
+    const facebookProvider = new FacebookAuthProvider();
 
     const [showPassword, setShowPassword] = useState(false);
 
     const handleLogin = (e) => {
         e.preventDefault()
-        const email = e.target.email.value;
-        const password = e.target.password.value;
+        console.log(e.currentTarget);
+        const form = new FormData(e.currentTarget);
+        const email = form.get('email');
+        const password = form.get('password');
         console.log(email, password);
-        signInWithEmailAndPassword(auth, email, password)
-        .then(result => {
-            console.log(result.user)
-            toast.success("Login successful");
-        })
-        .catch(error => {
-            console.log(error.massege)
-            toast.error("Login failed");
-        })
+        signIn(email, password)
+            .then(result => {
+                console.log(result.user);
+                e.target.reset();
+                navigate('/');
+                toast.success('Login successfull');
+            })
+            .catch(error => {
+                console.log(error.massege);
+                toast.error('Login failed');
+            })
+
     }
 
-    const handleGoogleSign = () =>{
-        signInWithPopup(auth, provider)
-        .then(result => {
-            console.log(result.user)
-            toast.success("Login successful");
-        })
-        .catch(error => {
-            console.log(error.massege)
-            toast.error("Login failed");
-        })
+    const handleGoogleSign = () => {
+        signInWithPopup(auth, googleProvider)
+            .then(result => {
+                console.log(result.user)
+                navigate('/');
+                toast.success("Login successful");
+            })
+            .catch(error => {
+                console.log(error.massege)
+                toast.error("Login failed");
+            })
     }
+    const handleFacebookSign = () => {
+        signInWithPopup(auth, facebookProvider)
+            .then(result => {
+                console.log(result.user);
+                navigate('/');
+                toast.success("Login successful");
+            })
+            .catch(error => {
+                console.log(error.massege)
+
+            })
+    }
+
 
 
     return (
@@ -88,15 +115,23 @@ const Login = () => {
                         </div>
                     </form>
                     <p className="text-center">Do not have an account? Please <Link to='/register' className="btn btn-link">Register</Link></p>
-
-                    <div className="mx-auto mb-4">
-                        <button onClick={handleGoogleSign} className="btn bg-[#E75854] px-10"><FaGoogle className="text-2xl"></FaGoogle></button>
-                        <button className="btn bg-[#f78245] px-10"><FaInstagram className="text-2xl"></FaInstagram></button>
+                    <div class="flex items-center">
+                        <div class="flex-1 border-t-2 border-gray-200"></div>
+                        <span class="px-3 text-gray-500 bg-white">or</span>
+                        <div class="flex-1 border-t-2 border-gray-200"></div>
                     </div>
+
+                    <div className="ml-8 mb-2 mt-2">
+                        <button onClick={handleGoogleSign} className="btn bg-[#E75854] mx-autl px-10 w-[320px]"><FaGoogle className="text-4xl"></FaGoogle></button>
+                    </div>
+                    <div className="ml-8">
+                        <button onClick={handleFacebookSign} className="btn bg-[#0855FF] px-10 w-[320px]"><FiFacebook className="text-4xl"></FiFacebook></button>
+                    </div>
+
                 </div>
 
             </div>
-             <ToastContainer />
+            <ToastContainer />
         </div>
     );
 };

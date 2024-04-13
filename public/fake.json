@@ -1,153 +1,120 @@
 [
     {
         "id": 1,
-        "estate_title": "Modern Family Home",
-        "image": "https://i.ibb.co/wRMg4Jp/happy-family-family-background-new-house-modern-new-house-is-background.jpg",
-        "segment_name": "Residential",
-        "description": "Beautifully designed modern family home with spacious living areas.",
-        "price": "$500,000",
+        "estate_title": "Cozy Family Home",
+        "segment_name": "Single-family homes",
+        "description": "A cozy single-family home perfect for a small family.",
+        "price": "$300,000",
         "status": "sale",
-        "area": "2500 sq ft",
+        "area": "1800 sq ft",
         "location": "City Center",
         "facilities": [
-            "living room",
-            "kitchen",
-            "backyard"
+            "3 bedrooms",
+            "2 bathrooms",
+            "Spacious living room",
+            "Backyard garden"
         ],
-        "button_text": "View Property"
+        "image": "https://i.ibb.co/5kDvnTP/40545.jpg"
     },
     {
         "id": 2,
-        "estate_title": "Luxury Condo",
-        "image": "https://i.ibb.co/BPMvWsh/analog-landscape-city-with-buildings.jpg",
-        "segment_name": "Residential",
-        "description": "Luxurious condo with stunning views and top-notch amenities.",
-        "price": "$1,200,000",
+        "estate_title": "Luxurious Penthouse",
+        "segment_name": "Apartments",
+        "description": "Experience luxury living in this stunning penthouse apartment.",
+        "price": "$500,000",
         "status": "sale",
-        "area": "1800 sq ft",
-        "location": "Waterfront",
+        "area": "2500 sq ft",
+        "location": "Downtown",
         "facilities": [
-            "swimming pool",
-            "gym",
-            "balcony"
+            "3 bedrooms",
+            "3 bathrooms",
+            "Infinity pool",
+            "Gym"
         ],
-        "button_text": "View Property"
+        "image": "https://i.ibb.co/cTVTSkY/14735.jpg"
     },
     {
         "id": 3,
-        "estate_title": "Cozy Townhouse",
-        "image": "https://i.ibb.co/b1gH6Ph/2151238253.jpg",
-        "segment_name": "Residential",
-        "description": "Charming townhouse perfect for small families.",
-        "price": "$300,000",
+        "estate_title": "Modern Townhouse",
+        "segment_name": "Townhouses",
+        "description": "A modern townhouse with sleek design and contemporary features.",
+        "price": "$400,000",
         "status": "sale",
-        "area": "1500 sq ft",
-        "location": "Suburbs",
-        "facilities": [
-            "backyard",
-            "garage"
-        ],
-        "button_text": "View Property"
-    },
-    {
+        "area": "2200 sq ft",
+        "location": "Suburban Neighborhood",
+        "facilities": ["4 bedrooms", "3.5 bathrooms", "Rooftop terrace", "Attached garage"],
+        "image": "https://i.ibb.co/MfhT62F/3d-electric-car-building-1.jpg"
+      },
+      {
         "id": 4,
-        "estate_title": "Spacious Villa",
-        "image": "https://i.ibb.co/hgQFrH3/backyard-water-contemporary-architecture-sky.jpg",
-        "segment_name": "Residential",
-        "description": "Expansive villa with beautiful landscaping and luxurious amenities.",
-        "price": "$2,500,000",
-        "status": "sale",
-        "area": "5000 sq ft",
-        "location": "Countryside",
-        "facilities": [
-            "swimming pool",
-            "tennis court",
-            "garden"
-        ],
-        "button_text": "View Property"
-    },
-    {
+        "estate_title": "Student Housing Complex",
+        "segment_name": "Student housing",
+        "description": "Purpose-built student housing complex near the university campus.",
+        "price": "$1,200/month",
+        "status": "rent",
+        "area": "800 sq ft",
+        "location": "Near University",
+        "facilities": ["Furnished rooms", "Study area", "Laundry facilities", "Fitness center"],
+        "image": "https://i.ibb.co/LzV8TVT/3238.jpg"
+      },
+      {
         "id": 5,
-        "estate_title": "Cosy Apartment",
-        "image": "https://i.ibb.co/JpXt2ks/3594.jpg",
-        "segment_name": "Residential",
-        "description": "Comfortable apartment in a prime location with great amenities.",
-        "price": "$350,000",
-        "status": "sale",
-        "area": "1200 sq ft",
-        "location": "Downtown",
-        "facilities": [
-            "gym",
-            "parking",
-            "balcony"
-        ],
-        "button_text": "View Property"
-    },
-    {
+        "estate_title": "Senior Living Community",
+        "segment_name": "Senior living communities",
+        "description": "An exclusive community offering comfortable living for seniors.",
+        "price": "$3,000/month",
+        "status": "rent",
+        "area": "1500 sq ft",
+        "location": "Retirement Village",
+        "facilities": ["1 bedroom", "Assisted living services", "Community activities", "Garden area"],
+        "image": "https://i.ibb.co/5FcrzCt/2149193854.jpg"
+      },
+      {
         "id": 6,
-        "estate_title": "Family Friendly Home",
-        "image": "https://i.ibb.co/DMYPM01/mother-daughter-standing-lawn.jpg",
-        "segment_name": "Residential",
-        "description": "Spacious home with a large backyard, perfect for families.",
-        "price": "$450,000",
-        "status": "sale",
-        "area": "1800 sq ft",
-        "location": "Suburbs",
-        "facilities": [
-            "backyard",
-            "garage",
-            "playroom"
-        ],
-        "button_text": "View Property"
-    },
-    {
-        "id": 7,
-        "estate_title": "Urban Loft",
-        "image": "https://i.ibb.co/59X6CwZ/174511.jpg",
-        "segment_name": "Residential",
-        "description": "Chic loft-style apartment with modern finishes and urban views.",
-        "price": "$600,000",
-        "status": "sale",
-        "area": "1600 sq ft",
-        "location": "City Center",
-        "facilities": [
-            "open floor plan",
-            "rooftop terrace"
-        ],
-        "button_text": "View Property"
-    },
-    {
-        "id": 8,
-        "estate_title": "Seaside Cottage",
-        "image": "https://i.ibb.co/bHhMd2h/empty-modern-room-with-furniture.jpg",
-        "segment_name": "Residential",
-        "description": "Quaint cottage with stunning ocean views and beach access.",
-        "price": "$800,000",
-        "status": "sale",
-        "area": "2000 sq ft",
-        "location": "Coastal",
-        "facilities": [
-            "beachfront",
-            "fireplace",
-            "deck"
-        ],
-        "button_text": "View Property"
-    },
-    {
-        "id": 9,
-        "estate_title": "Mountain Retreat",
-        "image": "https://i.ibb.co/RNfs2pn/small-house-built-peaceful-green-hill-high-up-mountains.jpg",
-        "segment_name": "Residential",
-        "description": "Rustic mountain retreat surrounded by nature and hiking trails.",
+        "estate_title": "Luxury Apartment with River View",
+        "segment_name": "Apartments",
+        "description": "A luxurious apartment with breathtaking views of the river.",
         "price": "$700,000",
         "status": "sale",
-        "area": "2500 sq ft",
-        "location": "Mountains",
-        "facilities": [
-            "scenic views",
-            "hot tub",
-            "fire pit"
-        ],
-        "button_text": "View Property"
-    }
+        "area": "1800 sq ft",
+        "location": "Waterfront",
+        "facilities": ["2 bedrooms", "2.5 bathrooms", "Balcony", "Fitness center"],
+        "image": "https://i.ibb.co/8z2wJPK/3558.jpg"
+      },
+      {
+        "id": 7,
+        "estate_title": "Vacation Rental Villa",
+        "segment_name": "Vacation rentals",
+        "description": "A spacious villa perfect for your next vacation getaway.",
+        "price": "$300/night",
+        "status": "rent",
+        "area": "3000 sq ft",
+        "location": "Beachfront",
+        "facilities": ["Private pool", "Beach access", "Outdoor dining area", "BBQ grill"],
+        "image": "https://i.ibb.co/N9QvD0f/3915.jpg"
+      },
+      {
+        "id": 8,
+        "estate_title": "Cozy Studio Apartment",
+        "segment_name": "Apartments",
+        "description": "A cozy studio apartment ideal for singles or couples.",
+        "price": "$1,200/month",
+        "status": "rent",
+        "area": "600 sq ft",
+        "location": "Downtown",
+        "facilities": ["Open-plan layout", "Modern kitchen", "Laundry facilities", "On-site parking"],
+        "image": "https://i.ibb.co/mzhJFm6/2150771505.jpg"
+      },
+      {
+        "id": 9,
+        "estate_title": "Family-Friendly Suburban Home",
+        "segment_name": "Single-family homes",
+        "description": "A spacious suburban home perfect for families.",
+        "price": "$450,000",
+        "status": "sale",
+        "area": "2800 sq ft",
+        "location": "Suburban Neighborhood",
+        "facilities": ["4 bedrooms", "3 bathrooms", "Backyard with play area", "Garage"],
+        "image": "https://i.ibb.co/9HCCb5j/playful-mood-smiling-young-adult-man-casual-clothes-holding-enthusiastic-school-age-daughter-back-wo.jpg"
+      }
 ]

@@ -3,12 +3,19 @@ import auth from "../../firebase/firebase.config";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { AuthContext } from "../Provider/AuthProvider";
+import { useNavigate } from "react-router-dom";
+
+
 
 
 
 const Register = () => {
+
+    const { createUser } = useContext(AuthContext)
+    const navigate = useNavigate();
 
     const [showPassword, setShowPassword] = useState(false);
 
@@ -17,11 +24,14 @@ const Register = () => {
 
     const handleRegister = e => {
         e.preventDefault();
-        const name = e.target.name.value;
-        const email = e.target.email.value;
-        const photoURL = e.target.photoURL.value;
-        const password = e.target.password.value;
-        console.log(name, email, photoURL, password)
+        console.log(e.currentTarget);
+        const form = new FormData(e.currentTarget);
+        console.log(form)
+        const name = form.get('name');
+        const email = form.get('email');
+        const photoURL = form.get('photoURL');
+        const password = form.get('password')
+        console.log(name, email, photoURL, password);
 
 
         if (password.length < 6) {
@@ -34,6 +44,17 @@ const Register = () => {
             notifyError("Your password should contain at least one lowercase character");
             return;
         }
+
+
+        createUser(email, password, name, photoURL)
+            .then(result => {
+                console.log(result.user);
+                e.target.reset();
+                navigate('/');
+            })
+            .catch(error => {
+                console.error(error.massege)
+            })
 
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
@@ -73,7 +94,7 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text"> PhotoURL</span>
                             </label>
-                            <input type="photoURL" name="photoURL" placeholder="photoURL" className="input input-bordered" required />
+                            <input type="text" name="photoURL" placeholder="photoURL" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
@@ -113,5 +134,4 @@ const Register = () => {
 };
 
 export default Register;
-
 
