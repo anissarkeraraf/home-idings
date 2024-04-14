@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from "../Provider/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -77,6 +78,9 @@ const Login = () => {
     return (
 
         <div>
+           <Helmet>
+            <title>Login | Home Idings</title>
+           </Helmet>
 
             <div className="hero min-h-screen">
 
@@ -122,10 +126,10 @@ const Login = () => {
                     </div>
 
                     <div className="ml-8 mb-2 mt-2">
-                        <button onClick={handleGoogleSign} className="btn bg-[#E75854] mx-autl px-10 w-[320px]"><FaGoogle className="text-4xl"></FaGoogle></button>
+                        <button onClick={() => handleGoogleSign()} className="btn bg-[#E75854] mx-autl px-10 w-[320px]"><FaGoogle className="text-4xl"></FaGoogle></button>
                     </div>
                     <div className="ml-8">
-                        <button onClick={handleFacebookSign} className="btn bg-[#0855FF] px-10 w-[320px]"><FiFacebook className="text-4xl"></FiFacebook></button>
+                        <button onClick={() => handleFacebookSign()} className="btn bg-[#0855FF] px-10 w-[320px]"><FiFacebook className="text-4xl"></FiFacebook></button>
                     </div>
 
                 </div>

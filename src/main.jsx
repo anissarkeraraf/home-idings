@@ -18,8 +18,16 @@ import PrivateRout from './componants/privateRoute/PrivateRout.jsx';
 import AboutUs from './componants/AboutUs/AboutUs.jsx';
 import FeaturedCards from './componants/FeaturedCards/FeaturedCards.jsx';
 import EstateSection from './componants/EstateSection/EstateSection.jsx';
+import Contact from './componants/Contact/Contact.jsx';
+import NotFound from './componants/NotFound/NotFound.jsx';
+import { HelmetProvider } from 'react-helmet-async';
 
 const router = createBrowserRouter([
+
+  {
+    path: '*',
+    element: <NotFound></NotFound>
+  },
   {
     path: "/",
     element: <Root></Root>,
@@ -57,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <AboutUs></AboutUs>
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>
       }
 
     ]
@@ -66,7 +78,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
-      <RouterProvider router={router} />
+      <HelmetProvider>
+        <RouterProvider router={router} />
+      </HelmetProvider>
     </AuthProvider>
   </React.StrictMode>,
 )

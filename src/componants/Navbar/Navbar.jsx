@@ -1,11 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import { RiHome2Line } from "react-icons/ri";
 // import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
+    console.log(user)
 
     const handleSignOut = () => {
         logOut()
@@ -38,8 +40,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex justify-center items-center">
-                    <img className="w-10 h-9 rounded-full" src="https://i.ibb.co/k1rDbGR/360-F-194382202-rc-GTFil2-M4f-Kd-PHvw-BQh-Ri-Atf53-YFidw.jpg" alt="" />
-                    <Link to='/'><a className="btn btn-ghost text-xl">MYHOME</a></Link>
+
+                    <Link to='/'><p className="text-3xl text-[#282828] flex">h<RiHome2Line className="block text-4xl"></RiHome2Line><span className="text-[#D6DE23]">idings</span></p></Link>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -49,13 +51,14 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-end space-x-3">
-                {user ? (
-                    <div tabIndex={0} role="button" className=" btn-circle avatar tooltip tooltip-bottom" data-tip={user.displayName}>
-                        <div className="w-10 rounded-full">
-                            <img className="profile-img" alt="Profile" src={user.photoURL} />
+                {user ?
+                    <div tabIndex={0} role="button" className=" btn-circle avatar tooltip tooltip-bottom" data-tip={user?.displayName || 'User name not found'}>
+                        <div className="w-10 rounded-full border">
+                            <img className="profile-img" alt="Profile" src={user?.photoURL || 'https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'} />
                         </div>
                     </div>
-                ) : null}
+                    : null
+                }
                 {
                     user ?
                         <button onClick={handleSignOut} className="btn">Log Out</button>
