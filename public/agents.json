@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Michael Rutter",
+        "image": "https://i.ibb.co/0cqFVdF/agents-01-540x460.jpg",
+        "specialty": "Certified HomeIdings specialist"
+    },
+    {
+        "id": 2,
+        "name": "Sam Wilson",
+        "image": "https://i.ibb.co/sqQfmhg/agents-02-540x460.jpg",
+        "specialty": "Residential HomeIdings specialist"
+    },
+    {
+        "id": 3,
+        "name": "Janet Richmond",
+        "image": "https://i.ibb.co/56N3wzP/agents-03-540x460.jpg",
+        "specialty": "HomeIdings specialist"
+    },
+    {
+        "id": 4,
+        "name": "Carl Parker",
+        "image": "https://i.ibb.co/gZL26Pg/agents-04-540x460.jpg",
+        "specialty": "HomeIdings specialist"
+    },
+    {
+        "id": 5,
+        "name": "Samantha Miller",
+        "image": "https://i.ibb.co/ZHfwRpF/1883.jpg",
+        "specialty": "Residential Property Expert"
+    },
+    {
+        "id": 6,
+        "name": "John Doe",
+        "image": "https://i.ibb.co/QbwJLR9/2150794862.jpg",
+        "specialty": "Experienced Residential Realtor"
+    }
+]

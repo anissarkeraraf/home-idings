@@ -21,10 +21,13 @@ const Navbar = () => {
 
     const navLinks = (
         <>
-            <li><NavLink to='/'>Home</NavLink></li>
-            <li><NavLink to='/update'>Update Profile</NavLink></li>
-            <li><NavLink to='/about'>About Us</NavLink></li>
-            {user && <li><NavLink to='/user'>User Profile</NavLink></li>}
+            <li className="mr-4"><NavLink to='/'>Home</NavLink></li>
+            {user && <>
+                <li className="mr-4"><NavLink to='/properties'>Properties</NavLink></li>
+                <li className="mr-4"i><NavLink to='/update'>Update Profile</NavLink></li>
+            </>}
+            <li className="mr-4"><NavLink to='/about'>About Us</NavLink></li>
+            <li className="mr-4"><NavLink to='/contact'>Contact Us</NavLink></li>
         </>
     );
 
@@ -51,13 +54,12 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-end space-x-3">
-                {user ?
+                {user ? (
                     <div tabIndex={0} role="button" className=" btn-circle avatar tooltip tooltip-bottom" data-tip={user?.displayName || 'User name not found'}>
                         <div className="w-10 rounded-full border">
-                            <img className="profile-img" alt="Profile" src={user?.photoURL || 'https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'} />
+                            <img className="profile-img" alt="Profile" src={user.photoURL} />
                         </div>
-                    </div>
-                    : null
+                    </div>) : null
                 }
                 {
                     user ?

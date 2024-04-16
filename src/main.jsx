@@ -21,6 +21,7 @@ import EstateSection from './componants/EstateSection/EstateSection.jsx';
 import Contact from './componants/Contact/Contact.jsx';
 import NotFound from './componants/NotFound/NotFound.jsx';
 import { HelmetProvider } from 'react-helmet-async';
+import Properties from './componants/Properties/Properties.jsx';
 
 const router = createBrowserRouter([
 
@@ -64,11 +65,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/about',
-        element: <AboutUs></AboutUs>
+        element: <AboutUs></AboutUs>,
+        loader: () => fetch('/agents.json')       
       },
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/properties',
+        element: <PrivateRout><Properties></Properties></PrivateRout>,
+        loader: () => fetch('/fake.json')
       }
 
     ]

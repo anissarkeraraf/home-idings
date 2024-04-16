@@ -22,24 +22,26 @@ const Register = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors },
     } = useForm();
 
-    const onSubmit = (data, e) => {
+    const onSubmit = (data) => {
         const { email, password, name, photoURL } = data;
         createUser(email, password)
             .then(() => {
+                toast.success('User register successfully');
+                reset();
+                navigate('/');
 
                 updateUserProfile(name, photoURL)
                     .then(() => {
                         console.log('Update Profile')
+                        toast.success('Update yoor profile successfully')
                     })
 
-                e.target.reset();
-                navigate('/');
-                toast.success('User register successfully');
-
             })
+
             .catch(error => {
                 console.log(error)
                 toast.error('Register failed')
