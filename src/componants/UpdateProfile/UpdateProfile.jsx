@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { AuthContext } from "../Provider/AuthProvider";
 import { updateProfile } from "firebase/auth";
@@ -6,13 +6,22 @@ import { ToastContainer, toast } from "react-toastify";
 
 const UpdateProfile = () => {
     const { user, setUser } = useContext(AuthContext);
-    const [name, setName] = useState(localStorage.getItem('name') || user?.displayName || ""); 
-    const [photoURL, setPhotoURL] = useState(localStorage.getItem('photoURL') || user?.photoURL || "");
+
+    // Initialize name and photoURL from local storage or user data
+    const [name, setName] = useState(() => localStorage.getItem('name') || user?.displayName || "");
+    const [photoURL, setPhotoURL] = useState(() => localStorage.getItem('photoURL') || user?.photoURL || "");
 
     useEffect(() => {
+        // Update local storage when name or photoURL changes
         localStorage.setItem('name', name);
         localStorage.setItem('photoURL', photoURL);
     }, [name, photoURL]);
+
+    useEffect(() => {
+        // Update local storage when user changes
+        localStorage.setItem('name', user?.displayName || '');
+        localStorage.setItem('photoURL', user?.photoURL || '');
+    }, [user]);
 
     const handleSave = () => {
         updateProfile(user, {
@@ -21,12 +30,9 @@ const UpdateProfile = () => {
         })
             .then(() => {
                 setUser({ ...user, displayName: name, photoURL: photoURL });
+                toast.success("You have successfully updated your profile");
                 setName("");
                 setPhotoURL("");
-                localStorage.removeItem('name');
-                localStorage.removeItem('photoURL');
-                console.log("Profile successfully updated:", { displayName: name, photoURL: photoURL });
-                toast.success("You have successfully updated your profile");
             })
             .catch(error => {
                 console.log(error.message);
@@ -56,7 +62,7 @@ const UpdateProfile = () => {
                                 <label className="label">
                                     <span className="label-text">photoURL</span>
                                 </label>
-                                <input type="text" placeholder="photoURL" className="input input-bordered" value={photoURL} onChange={(e) => setPhotoURL(e.target.value)} required /> 
+                                <input type="text" placeholder="photoURL" className="input input-bordered" value={photoURL} onChange={(e) => setPhotoURL(e.target.value)} required />
                             </div>
                             <div className="form-control mt-6">
                                 <button type="button" onClick={handleSave} className="btn btn-primary">Save</button>

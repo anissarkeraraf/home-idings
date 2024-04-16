@@ -59,7 +59,7 @@ const Footer = () => {
                             <input type="text" placeholder="username@site.com" className="input input-bordered join-item w-full" />
                         </div>
                         <div className="mt-6">
-                            <button className="btn bg-[#ff6500] hover:bg-[#1C6861] text-white join-item w-full">Subscribe</button>
+                            <button className="btn bg-[#ff6500] duration-1000 hover:bg-[#1C6861] text-white join-item w-full">Subscribe</button>
                         </div>
                     </fieldset>
                 </form>

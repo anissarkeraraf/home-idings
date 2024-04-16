@@ -11,9 +11,9 @@ const EstateSection = () => {
     const details = useLoaderData();
     console.log(details)
     const { id } = useParams();
-    // console.log (typeof id)
+  
     const idInt = parseInt(id)
-    // console.log(typeof idInt)
+    
     const detail = details.find(detail => detail.id === idInt);
 
     const facilities = detail.facilities || [];
