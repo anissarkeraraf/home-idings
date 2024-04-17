@@ -3,12 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { FaPhone, FaVoicemail } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
-import Map from "../Map/Map";
 
 
-// useEffect( () => {
-//     document.title= 'Contact'
-// },[])
 
 const Contact = () => {
     return (
@@ -84,9 +80,9 @@ const Contact = () => {
                         </div>
                     </form>
                 </div>
-                <div>
-                </div>
+
             </div>
+           
         </div>
     );
 };

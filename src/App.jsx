@@ -1,18 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { MapContainer } from "react-leaflet";
 
-function App() {
-  const [count, setCount] = useState(0)
 
+
+const App = () => {
   return (
-    <>
-     
-      <h1>Vite + React</h1>
-       
-    </>
-  )
-}
+    <MapContainer center={center} zoom={10} style={{width: '100vw', height: '100vh'}}>
 
-export default App
+    </MapContainer>
+  );
+};
+
+export default App;
