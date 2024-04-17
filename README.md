@@ -1,9 +1,9 @@
 # HomeIdings
 
-Welcome to Home Vibe, your go-to destination for discovering and exploring a vast collection of Homes
+Welcome to HomeIdings, your go-to destination for discovering and exploring a vast collection of Homes
 
 ## Live Site URL
-[HomeIdings]()
+[HomeIdings](https://dragon-news-3960f.web.app/)
 
 ## Features
 - **Residential**: Single-family homes, townhouses, apartments, student
