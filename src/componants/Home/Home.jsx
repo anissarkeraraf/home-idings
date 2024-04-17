@@ -17,14 +17,14 @@ const Home = () => {
             </Helmet>
             <Banner></Banner>
             <Card></Card>
-            <h2 className="text-5xl font-bold text-center mt-20 mb-24">Featured Properties</h2>
+            <h2 data-aos="fade-up" data-aos-duration='1000' className="text-5xl font-bold text-center mt-20 mb-24">Featured Properties</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
                 {
                     home.slice(0, 3).map(aHome => <FeaturedCards key={aHome.id} home={aHome}></FeaturedCards>)
                 }
             </div>
-            <div className="card-actions mt-4">
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration='1000' className="card-actions mt-4">
                 <Link to="/properties" className="mx-auto btn border-none bg-[#ff6500] hover:bg-[#1C6861] text-white duration-1000">Show All Properties</Link>
             </div>
         </div>

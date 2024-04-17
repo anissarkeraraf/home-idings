@@ -20,18 +20,18 @@ const AboutUs = () => {
             </Helmet>
             <div className="relative">
 
-                <img src="https://i.ibb.co/mJn5GZ3/breadcrumbs-bg-01-1922x291.jpg" alt="" />
-                <h2 className="absolute top-5 md:top-8 lg:top-16 left-[170px] md:left-[290px] lg:left-[490px] text-white font-semibold text-3xl md:text-5xl lg:text-5xl">About Us</h2>
+                <img data-aos="flip-left" data-aos-duration='1000' src="https://i.ibb.co/mJn5GZ3/breadcrumbs-bg-01-1922x291.jpg" alt="" />
+                <h2 data-aos='fade-up' data-aos-duration='1000' className="absolute top-5 md:top-8 lg:top-16 left-[170px] md:left-[290px] lg:left-[490px] text-white font-semibold text-3xl md:text-5xl lg:text-5xl">About Us</h2>
             </div>
 
             <div className="lg:flex mt-10 lg:mt-20">
-                <div className="lg:w-1/2 lg:mr-10">
+                <div data-aos='fade-up' data-aos-duration='1000' className="lg:w-1/2 lg:mr-10">
                     <img className="lg:h-full rounded-lg" src="https://i.ibb.co/gzhxFCG/700a2d87fd2337d341b7549f72231c9fb07835e6-2880x1400.webp" alt="" />
                 </div>
                 <div className="lg:w-1/2 bg-[#31323c] mt-10 lg:mt-0 rounded-lg">
-                    <h2 className="text-4xl pt-4 lg:pt-0 md:text-5xl lg:text-5xl text-white md:pl-28 pl-12">Experience since 1999</h2>
+                    <h2 data-aos='fade-up' data-aos-duration='1000' className="text-4xl pt-4 lg:pt-0 md:text-5xl lg:text-5xl text-white md:pl-28 pl-12">Experience since 1999</h2>
                     <hr className="mr-12 ml-12 mt-5" />
-                    <div className="text-white p-5">
+                    <div data-aos='fade-up' data-aos-duration='1000' className="text-white p-5">
                         <h2 className=""></h2>
                         <div role="tablist" className="tabs tabs-lifted">
                             <input type="radio" name="my_tabs_2" role="tab" className="tab font-semibold text-[#BC986B] duration-700 hover:text-[#ABABAF] bg-[#31323c]" aria-label="OurGoal" />
@@ -65,8 +65,8 @@ const AboutUs = () => {
             </div>
 
             <div className="mt-20">
-                <h2 className="text-6xl font-sans mb-20">Our Agents</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <h2 data-aos='fade-up' data-aos-duration='1000' className="text-6xl font-sans mb-20">Our Agents</h2>
+                <div data-aos='fade-down' data-aos-duration='1000' className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {
                         agents.map(agent => <AllAgents key={agent.id} agent={agent}></AllAgents>)
                     }

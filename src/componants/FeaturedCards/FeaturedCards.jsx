@@ -17,10 +17,10 @@ const FeaturedCards = ({ home }) => {
         <div>
             <div className="card mb-5 bg-[#e9dbce] shadow-xl text-[#bc9874] hover:text-black transition duration-1000 ease-in-out hover:scale-110">
                 <figure className=" pt-10">
-                    <img src={image} alt="Shoes" className=" h-[250px] w-full " />
+                    <img data-aos='fade-up' data-aos-duration='1000' src={image} alt="Shoes" className=" h-[250px] w-full " />
 
                 </figure>
-                <div className="card-body">
+                <div data-aos='fade-down' data-aos-duration='1000' className="card-body">
                     <h2 className="card-title "><a href="">{segment_name}</a></h2>
                     <hr className="pl-4 pr-4 mt-2 mb-2 opacity-60" />
                     <div className="flex justify-between mt-4">

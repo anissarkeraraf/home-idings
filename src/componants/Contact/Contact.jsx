@@ -17,25 +17,25 @@ const Contact = () => {
             </Helmet>
             <div className="relative mt-10">
 
-                <img className="w-full lg:h-[250px]" src="https://i.ibb.co/fM90K0d/conpany-10-770x250.webp" alt="" />
-                <h2 className="absolute top-12 md:top-20 lg:top-24 left-[170px] md:left-[250px] lg:left-[490px] text-white font-semibold text-3xl md:text-5xl lg:text-5xl">Contact Us</h2>
+                <img data-aos="flip-up" data-aos-duration='1000' className="w-full lg:h-[250px]" src="https://i.ibb.co/fM90K0d/conpany-10-770x250.webp" alt="" />
+                <h2 data-aos='fade-down' data-aos-duration='1000' className="absolute top-12 md:top-20 lg:top-24 left-[170px] md:left-[250px] lg:left-[490px] text-white font-semibold text-3xl md:text-5xl lg:text-5xl">Contact Us</h2>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 divide-x-2 mt-20">
                 <div>
-                    <p className="text-5xl">Contact Details</p>
-                    <p className="mt-10 opacity-50">If you have any questions, just fill in the contact form, and we will answer you shortly. If you are living nearby, come visit our office.</p>
-                    <h2 className="text-black font-medium mt-10">Client Support:</h2>
+                    <p data-aos='fade-down' data-aos-duration='1000' className="text-5xl">Contact Details</p>
+                    <p data-aos='fade-down' data-aos-duration='1000' className="mt-10 opacity-50">If you have any questions, just fill in the contact form, and we will answer you shortly. If you are living nearby, come visit our office.</p>
+                    <h2 data-aos='fade-down' data-aos-duration='1000' className="text-black font-medium mt-10">Client Support:</h2>
                     <div className="divide-y-2 mr-48">
-                        <p className="flex items-center mt-10 text-xl md:text-3xl lg:text-3xl pb-10 duration-700 hover:text-[#BC986B]"><FaPhone className="mr-4 text-xl text-[#BC986B]"></FaPhone>1-800-1234-567</p>
+                        <p data-aos='fade-down' data-aos-duration='1000' className="flex items-center mt-10 text-xl md:text-3xl lg:text-3xl pb-10 duration-700 hover:text-[#BC986B]"><FaPhone className="mr-4 text-xl text-[#BC986B]"></FaPhone>1-800-1234-567</p>
 
-                        <p className="flex items-center text-xl md:text-2xl lg:text-2xl pt-10 pb-10 duration-700 hover:text-[#BC986B]"><TfiEmail className="mr-4 text-xl text-[#BC986B]"></TfiEmail>
+                        <p data-aos='fade-down' data-aos-duration='1000' className="flex items-center text-xl md:text-2xl lg:text-2xl pt-10 pb-10 duration-700 hover:text-[#BC986B]"><TfiEmail className="mr-4 text-xl text-[#BC986B]"></TfiEmail>
                             info@demolink.org</p>
 
-                        <p className="flex text-xl md:text-2xl lg:text-2xl pt-10 duration-700 hover:text-[#BC986B]"><FaLocationDot className="mr-4 text-2xl text-[#BC986B]"></FaLocationDot>
+                        <p data-aos='fade-down' data-aos-duration='1000' className="flex text-xl md:text-2xl lg:text-2xl pt-10 duration-700 hover:text-[#BC986B]"><FaLocationDot className="mr-4 text-2xl text-[#BC986B]"></FaLocationDot>
                             3015 Grand Ave, Coconut Grove,Merrick Way, FL 12345</p>
                     </div>
                 </div>
-                <div className=" lg:pl-20 pt-10 lg:pt-0">
+                <div data-aos='fade-up' data-aos-duration='1000' className=" lg:pl-20 pt-10 lg:pt-0">
                     <p className="text-5xl">Get in Touch</p>
                     <form>
                         <div className="mb-8 mt-10">
