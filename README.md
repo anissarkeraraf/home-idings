@@ -11,25 +11,33 @@ housing, senior living communities, vacation rentals. Our website is above resid
 
 - **Include Relevant Details**: Mention specific details about the property, such as its location, size, layout, condition, amenities, and any notable features.
 - **Our Agents**
+
 **One Agents**
  - Name: Michael Rutter,
  - Specialist: Certified HomeIdings specialist
+
 **Two Agents**
  - Name: Sam Wilson,
  - Specialist: Residential HomeIdings specialist
+
 **Three Agents**
  - Name: Janet Richmond,
  - Specialist: HomeIdings specialist
+
 **Four Agents**
  - Name: Carl Parker,
  - Specialist: HomeIdings specialist
+
 **Five Agents**
  - Name: Samantha Miller,
  - Specialist: Residential Property Expert
+
 **Six Agents**
  - Name: John Doe,
  - Specialist: Experienced Residential Realtor
+
 - **NPN Package**: I have used the following npm packages on my website.
+
 **a**. AOS Package,
 **b**. React Hook form,
 **c**. Swiper slider
@@ -42,12 +50,14 @@ housing, senior living communities, vacation rentals. Our website is above resid
 - status: sale,
 - area: 1800 sq ft,
 - location: City Center
+
 **ii** 
 - Home name : Apartments,
 - price: $500,000,
 - status: sale,
 - area: 2500 sq ft,
 - location: Downtown
+
 **iii** 
 - Home name : Student housing,
 - price: $1,200/month,
