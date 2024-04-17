@@ -8,6 +8,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { AuthContext } from "../Provider/AuthProvider";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
+import { TotpSecret } from "firebase/auth/web-extension";
 
 
 
@@ -28,9 +29,25 @@ const Register = () => {
 
     const onSubmit = (data) => {
         const { email, password, name, photoURL } = data;
+        if(password.length < 6){
+            toast.error('Password should be at least 6 character');
+            return;
+        }
+        else if(!/[A-Z]/.test(password)){
+            toast.error('Your password should have at least one upercase character')
+            return;
+        }
+        else if(!/[a-z]/.test(password)){
+            toast.error('Your password should have at least one lowercase character')
+            return;
+        }
+        else{
+            toast.success('User register successfully');
+        }
         createUser(email, password)
+    
             .then(() => {
-                toast.success('User register successfully');
+                
                 reset();
                 navigate('/');
 

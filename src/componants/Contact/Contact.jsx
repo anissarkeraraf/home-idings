@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { FaPhone, FaVoicemail } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
+import Map from "../Map/Map";
 
 
 // useEffect( () => {
@@ -82,6 +83,8 @@ const Contact = () => {
                             <button className="pl-7 pr-7 pt-3 pb-3 bg-[#BC986B] duration-700 hover:bg-[#ffc107]">Send Massege</button>
                         </div>
                     </form>
+                </div>
+                <div>
                 </div>
             </div>
         </div>
